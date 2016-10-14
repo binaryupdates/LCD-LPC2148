@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\lcd.o"
+--strict --scatter ".\LCD162_LPC2148.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\LCD162_LPC2148.map" -o .\LCD162_LPC2148.axf
